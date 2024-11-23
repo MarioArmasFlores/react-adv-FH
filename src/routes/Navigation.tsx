@@ -24,6 +24,7 @@ export const Navigation = () => {
             <li>
               <NavLink to="/users" activeClassName="nav-active" exact>Users</NavLink>
             </li>
+          
           </ul>
         </nav>
 

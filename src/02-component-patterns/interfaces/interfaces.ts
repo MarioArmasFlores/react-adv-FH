@@ -25,12 +25,11 @@ import { Props as ProductButtonsProps } from "../components/ProductButtons";
     Title: (Props: ProductTitleProps ) => JSX.Element;
      Image: (Props: ProductImageProps ) => JSX.Element;
      Buttons: (Props: ProductButtonsProps ) => JSX.Element;
-     
-  
-     
+  }
 
-    
+  export interface onChnageArgs {
+    product: Product;
+    count: number;
 
-     
   }
   
