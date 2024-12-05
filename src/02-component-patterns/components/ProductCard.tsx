@@ -14,17 +14,18 @@ export interface Props {
   activeBtnClass?: string;
   style?: React.CSSProperties;
   onChange?: ( args: onChnageArgs ) => void;
+  value?: number;
 }
 
-export const ProductCard = ({ children, product, className, style, onChange  }: Props) => {
-  const { counter, increaseBy } = useProducts( { onChange, product } );
+export const ProductCard = ({ children, product, className, style, onChange, value  }: Props) => {
+  const { counter, increaseBy } = useProducts( { onChange, product, value } );
   return (
     <Provider
       value={{
         counter,
         increaseBy,
         product,
-        
+        value
       }}
     >
       <div style={ style } className={`${ styles.productCard } ${ className }`}>

@@ -16,6 +16,7 @@ import { Props as ProductButtonsProps } from "../components/ProductButtons";
     counter: number;
     increaseBy: (value: number) => void;
     product: Product;
+    value?: number | undefined;
   }
 
   export interface ProductCardHOCProps {
@@ -31,5 +32,9 @@ import { Props as ProductButtonsProps } from "../components/ProductButtons";
     product: Product;
     count: number;
 
+  }
+
+  export interface ProductInCart extends Product {
+    count: number;
   }
   
